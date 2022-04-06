@@ -6,11 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nome = "José"
+
+  numero: number;
+
+  escolher(){
+    this.numero =  Math.floor(Math.random() * 6) +1
+  }
+
+  /*nome;
   idade = 20
+  esconderCaixa = false
+
+  alterarNome(evento){
+    //console.log(nome)
+    console.log(evento.target)
+    this.nome = evento.target.value
+  }
 
   lancarDado(){
     return Math.floor(Math.random() * 6) +1
   }
+
+  adicionar(nomeInput){
+    console.log("adicionando...")
+    console.log(nomeInput.value)
+  }*/
 
 }

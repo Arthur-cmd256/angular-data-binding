@@ -1,4 +1,41 @@
-<p>Lançando um dado: {{lancarDado()}}</p>
+<div class="container my-3 p-3 border border-round">
+  <div class="form-group">
+    <label for="" for-numeroInput="">Escolha um número</label>
+
+    <input [(ngModel)]="numero" type="number" class="form-control" id="numeroInput" placeholder="Escolha um número" #numeroInput>
+
+    <div class="alert alert-secondary mt-3 p-3 text-center">
+      {{numero}}
+    </div>
+
+    <div class="d-grid gap-2 mt-1">
+      <button type="button" (click)="escolher()" class="btn btn-secondary">
+        Escolher para min
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- <div class="container my-3 border p-3">
+  <form>
+    <div class="form-group">
+      <label for="nomeInput">Nome</label>
+      <input type="text" class="form-control" id="nomeInput" placeholder="Digite um nome" #nomeInput>
+    </div>
+    <div class="d-grid gap-2 mt-1">
+      <button (click)="adicionar(nomeInput)" type="button" class="btn btn-secondary">
+        adicionar
+      </button>
+      <div [hidden]="esconderCaixa" class="alert alert-primary mt-3 p-3">
+        {{nome}}
+      </div>
+    </div>
+  </form>
+</div> -->
+
+<!--<p>Lançando um dado: {{lancarDado()}}</p>
 <p>Oi, meu nome é {{nome}} e tenho {{idade}} anos.</p>
 
-2 + 2 = {{2 + 2}}
+2 + 2 = {{2 + 2}} -->
+
